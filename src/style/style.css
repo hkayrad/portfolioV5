@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "ddbb";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Disposable Droid BB"), url("./fonts/disposabledroid-bb.regular.woff") format("woff");
+}
+@font-face {
+  font-family: "ddbb_b";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Disposable Droid BB Bold"), url("./fonts/disposabledroid-bb.bold.woff") format("woff");
+}
+:root {
+  --bgcolor: #fff;
+  --color: #111;
+}
+
+* {
+  font-family: "ddbb";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  height: 7em;
+}
+nav.navbar a.name {
+  color: var(--color);
+  font-family: "ddbb_b";
+  font-size: 8em;
+  text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+nav.navbar ul.leftNav,
+nav.navbar ul.rightNav {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 4em;
+}
+nav.navbar ul.leftNav a.link,
+nav.navbar ul.rightNav a.link {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: var(--color);
+}
+nav.navbar ul.leftNav a.active,
+nav.navbar ul.rightNav a.active {
+  font-family: "ddbb_b";
+  text-decoration: underline;
+}
+nav.navbar ul.leftNav {
+  justify-content: flex-end;
+}
+nav.navbar ul.rightNav {
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1060px) {
+  nav.navbar {
+    display: none;
+  }
+  nav.navmenu {
+    display: unset;
+  }
+}
+div.home {
+  height: calc(100vh - 7em);
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+}
+div.home article.welcomer {
+  padding: 2em;
+  background-color: #f00;
+}
+div.home article.welcomer h2.welcomerTitle {
+  font-size: 3em;
+}
+div.home article.welcomer p.welcomerText {
+  font-size: 2em;
+}
+div.home a.resume img.computer {
+  transform: scaleX(-1);
+  width: 40em;
+  filter: saturate(0);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+div.home a.resume img.computer:hover {
+  filter: saturate(1);
+}/*# sourceMappingURL=style.css.map */
