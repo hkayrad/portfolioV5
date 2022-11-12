@@ -1,14 +1,15 @@
 //* dependencies
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Document } from "react-pdf/dist/esm/entry.webpack5";
 //* styling
 import "./style/style.css";
 
 //* routes/components
 import Navbar from "./components/Navbar";
 import Home from "./routes/Home";
+import Resume from "./components/Resume";
 
 const router = createBrowserRouter([
   {
@@ -31,11 +32,11 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Home />,
       },
+      {
+        path: "/resume",
+        element: <Resume />,
+      },
     ],
-  },
-  {
-    path: "/resume",
-    element: <></>,
   },
 ]);
 
