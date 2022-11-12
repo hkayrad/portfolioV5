@@ -13,6 +13,7 @@
 :root {
   --bgcolor: #fff;
   --color: #111;
+  --overflow: hidden;
 }
 
 * {
@@ -28,6 +29,10 @@
 *::selection {
   color: var(--bgcolor);
   background-color: var(--color);
+}
+
+body {
+  overflow: var(--overflow);
 }
 
 div.resumeWrapper {

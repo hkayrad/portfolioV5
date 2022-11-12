@@ -1,17 +1,25 @@
 //* dependencies
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Document } from "react-pdf/dist/esm/entry.webpack5";
+import { BrowserRouter } from "react-router-dom";
+
 //* styling
 import "./style/style.css";
 
 //* routes/components
+import AnimatedRouter from "./components/AnimatedRouter";
 import Navbar from "./components/Navbar";
-import Home from "./routes/Home";
-import Resume from "./components/Resume";
 
-const router = createBrowserRouter([
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Navbar />
+      <AnimatedRouter />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
+/* const router = createBrowserRouter([
   {
     path: "/",
     element: <Navbar />,
@@ -22,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <Home />,
+        element: <Projects />,
       },
       {
         path: "/about",
@@ -38,10 +46,12 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+]); */
 
+/* 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+ */

@@ -16,6 +16,7 @@
 :root {
   --bgcolor: #fff;
   --color: #111;
+  --overflow: hidden;
 }
 
 * {
@@ -28,6 +29,10 @@
     color: var(--bgcolor);
     background-color: var(--color);
   }
+}
+
+body {
+  overflow: var(--overflow);
 }
 
 //? resume styling

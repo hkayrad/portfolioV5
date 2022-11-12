@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import "../style/style.css";
+import { NavLink } from "react-router-dom";
+import Project from "../components/Project";
 
-export default function Home() {
+export default function Projects() {
   return (
     <motion.div
       className="home"
@@ -10,20 +10,11 @@ export default function Home() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
-
-      /* 
-        transition: { duration: 0.5 },
-        initial: { opacity: 0, y: 20 },
-        animate: { opacity: 1, y: 0 },
-        exit: { opacity: 0, y: -20 }
-      */
     >
       <div className="whitespace"></div>
       <article className="welcomer">
         <h2 className="welcomerTitle">Hakan Kayra Dogan</h2>
-        <p className="welcomerText">
-          I'm an Information Systems Engineering student @ Atilim University
-        </p>
+        <p className="welcomerText">Zorttiri zor zort zorttiri zort zort</p>
         <p className="links">Here are some links about myself:</p>
         <ul className="linksList">
           <li>
