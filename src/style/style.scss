@@ -2,15 +2,14 @@
   font-family: "ddbb";
   font-style: normal;
   font-weight: normal;
-  src: local("Disposable Droid BB"),
-    url("./fonts/disposabledroid-bb.regular.woff") format("woff");
+  src: local("Disposable Droid BB"), url("../fonts/ddbbr.woff") format("woff");
 }
 @font-face {
   font-family: "ddbb_b";
   font-style: normal;
   font-weight: normal;
   src: local("Disposable Droid BB Bold"),
-    url("./fonts/disposabledroid-bb.bold.woff") format("woff");
+    url("../fonts/ddbbb.woff") format("woff");
 }
 
 :root {
