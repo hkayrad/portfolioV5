@@ -1,16 +1,14 @@
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 
-import Project from "../components/Project";
-
-export default function Projects() {
+export default function About() {
   useEffect(() => {
-    document.title = "Projects";
+    document.title = "About Me";
   }, []);
 
   return (
     <motion.div
-      className="projects"
+      className="about"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}

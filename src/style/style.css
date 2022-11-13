@@ -13,6 +13,7 @@
 :root {
   --bgcolor: #fff;
   --color: #111;
+  --inversion: invert(1);
   --overflow: hidden;
 }
 
@@ -33,6 +34,13 @@
 
 body {
   overflow: var(--overflow);
+  background-color: var(--bgcolor);
+  color: var(--color);
+}
+body #root {
+  color: var(--color);
+  background-color: var(--bgcolor);
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 div.resumeWrapper {
@@ -48,7 +56,9 @@ div.resumeWrapper embed.resume {
 nav.navbar {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  background-color: var(--bgcolor);
   height: 7em;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 nav.navbar a.name {
   color: var(--color);
@@ -108,6 +118,47 @@ nav.navbar ul.leftNav {
 }
 nav.navbar ul.rightNav {
   justify-content: flex-start;
+}
+nav.navbar .whitespace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav.navbar .switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 15px;
+  box-sizing: border-box;
+}
+nav.navbar .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+}
+nav.navbar .switch input:checked + .slider:before {
+  transform: translateX(17px);
+}
+nav.navbar .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: transparent;
+  outline: 4px var(--color) solid;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+nav.navbar .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 17px;
+  background-color: var(--color);
+  transition: 0.4s;
 }
 
 @media only screen and (max-width: 1165px) {
@@ -174,21 +225,86 @@ div.home article.welcomer ul.linksList a::before {
     width: 100%;
   }
 }
-
-a.resume {
+div.home a.resume {
   color: var(--color);
   text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-a.resume img.computer {
+div.home a.resume img.computer {
   transform: scaleX(-1);
   width: clamp(10em, 40em, 100%);
   filter: saturate(0);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-a.resume img.computer:hover {
+div.home a.resume img.computer:hover {
   filter: saturate(1);
 }
-a.resume p.desc {
+div.home a.resume p.desc {
   width: clamp(10em, 40em, 100%);
   text-align: center;
+}
+
+div.projects {
+  overflow: auto;
+  height: calc(100vh - 7em);
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 4fr;
+  padding-top: 5em;
+}
+
+div.about {
+  overflow: auto;
+  height: calc(100vh - 7em);
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 4fr;
+  padding-top: 5em;
+}
+
+div.contact {
+  overflow: auto;
+  height: calc(100vh - 7em);
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 4fr;
+  padding-top: 5em;
+}
+
+div.disclaimer {
+  position: absolute;
+  z-index: 99;
+  bottom: 1em;
+  left: 1em;
+  background-color: var(--color);
+  color: var(--bgcolor);
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 20em;
+  box-shadow: -3px 0 0 0 var(--color), 3px 0 0 0 var(--color), 0 -3px 0 0 var(--color), 0 3px 0 0 var(--color);
+}
+div.disclaimer .wrapper {
+  position: relative;
+  padding: 0.5em;
+}
+div.disclaimer .wrapper .title {
+  line-height: 1.5em;
+}
+div.disclaimer .wrapper .desc {
+  margin-top: 1em;
+}
+div.disclaimer .wrapper .closeBtn {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  filter: var(--inversion);
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 2em;
+}
+div.disclaimer .wrapper .closeBtn:hover {
+  cursor: pointer;
+}
+div.disclaimer.closed {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

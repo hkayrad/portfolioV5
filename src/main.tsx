@@ -2,6 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { CookiesProvider } from "react-cookie";
 
 //* styling
 import "./style/style.css";
@@ -9,13 +10,17 @@ import "./style/style.css";
 //* routes/components
 import AnimatedRouter from "./components/AnimatedRouter";
 import Navbar from "./components/Navbar";
+import CookieDisclaimer from "./components/CookieDisclaimer";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Navbar />
-      <AnimatedRouter />
-    </BrowserRouter>
+    <CookiesProvider>
+      <BrowserRouter>
+        <Navbar />
+        <AnimatedRouter />
+        <CookieDisclaimer />
+      </BrowserRouter>
+    </CookiesProvider>
   </React.StrictMode>
 );
 

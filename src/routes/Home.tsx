@@ -1,8 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import "../style/style.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Hakan Kayra Doğan";
+  }, []);
+
   return (
     <motion.div
       className="home"
@@ -27,10 +31,14 @@ export default function Home() {
         <p className="links">Here are some links about myself:</p>
         <ul className="linksList">
           <li>
-            <a href="http://github.com/hkayrad">GitHub</a>
+            <a href="http://github.com/hkayrad" target="_blank">
+              GitHub
+            </a>
           </li>
           <li>
-            <a href="http://linkedin.com/in/hkayrad">Linkedin</a>
+            <a href="http://linkedin.com/in/hkayrad" target="_blank">
+              Linkedin
+            </a>
           </li>
         </ul>
       </article>
