@@ -281,7 +281,6 @@ div.projects {
 
   .slider {
     position: relative;
-    height: calc(100vh - 7.3em);
 
     .project {
       position: absolute;
@@ -302,7 +301,7 @@ div.projects {
       }
 
       &[data-status="before"] {
-        transform: translateX(-155%);
+        transform: translateX(-140%);
         scale: 0.85;
         z-index: 2;
 
@@ -321,7 +320,7 @@ div.projects {
       }
 
       &[data-status="after"] {
-        transform: translateX(155%);
+        transform: translateX(140%);
         scale: 0.85;
         z-index: 2;
 
@@ -336,6 +335,76 @@ div.projects {
 
         &:hover {
           scale: 0.9;
+        }
+      }
+    }
+  }
+
+  .buttons {
+    position: absolute;
+    width: 100vw;
+    height: 5em;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    button {
+      position: relative;
+      width: 100%;
+      background-color: var(--bgcolor);
+      border: none;
+      border-top: 3px solid var(--color);
+      color: var(--color);
+      transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      font-size: 2em;
+      z-index: 1;
+      cursor: pointer;
+
+      &.next {
+        border-left: 3px solid var(--color);
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 0;
+          background-color: var(--color);
+          z-index: -1;
+          transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+          box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+        }
+
+        &:hover {
+          color: var(--bgcolor);
+
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+
+      &.prev {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 0;
+          background-color: var(--color);
+          z-index: -1;
+          transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+          box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+        }
+
+        &:hover {
+          color: var(--bgcolor);
+
+          &::before {
+            width: 100%;
+          }
         }
       }
     }

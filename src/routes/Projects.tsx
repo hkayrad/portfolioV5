@@ -105,46 +105,45 @@ export default function Projects() {
           index="0"
           status="outside-left"
           name="test"
-          img="https://via.placeholder.com/900x600"
+          img="https://via.placeholder.com/1100x600"
           desc="test"
         />
         <Project
           index="1"
           status="before"
           name="test"
-          img="https://via.placeholder.com/900x600"
+          img="https://via.placeholder.com/1100x600"
           desc="test"
         />
         <Project
           index="2"
           status="active"
           name="test"
-          img="https://via.placeholder.com/900x600"
+          img="https://via.placeholder.com/1100x600"
           desc="test"
         />
         <Project
           index="3"
           status="after"
           name="test"
-          img="https://via.placeholder.com/900x600"
+          img="https://via.placeholder.com/1100x600"
           desc="test"
         />
         <Project
           index="4"
           status="outside-right"
           name="test"
-          img="https://via.placeholder.com/900x600"
+          img="https://via.placeholder.com/1100x600"
           desc="test"
         />
-
-        <div className="buttons">
-          <button className="prev" onClick={prevBtn}>
-            Prev
-          </button>
-          <button className="next" onClick={nextBtn}>
-            Next
-          </button>
-        </div>
+      </div>
+      <div className="buttons">
+        <button className="prev" onClick={prevBtn}>
+          Previous Project
+        </button>
+        <button className="next" onClick={nextBtn}>
+          Next Project
+        </button>
       </div>
     </motion.div>
   );

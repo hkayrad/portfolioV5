@@ -254,7 +254,6 @@ div.projects {
 }
 div.projects .slider {
   position: relative;
-  height: calc(100vh - 7.3em);
 }
 div.projects .slider .project {
   position: absolute;
@@ -275,7 +274,7 @@ div.projects .slider .project[data-status=outside-left]:hover {
   scale: 0.9;
 }
 div.projects .slider .project[data-status=before] {
-  transform: translateX(-155%);
+  transform: translateX(-140%);
   scale: 0.85;
   z-index: 2;
 }
@@ -290,7 +289,7 @@ div.projects .slider .project[data-status=active]:hover {
   scale: 1.05;
 }
 div.projects .slider .project[data-status=after] {
-  transform: translateX(155%);
+  transform: translateX(140%);
   scale: 0.85;
   z-index: 2;
 }
@@ -304,6 +303,65 @@ div.projects .slider .project[data-status=outside-right] {
 }
 div.projects .slider .project[data-status=outside-right]:hover {
   scale: 0.9;
+}
+div.projects .buttons {
+  position: absolute;
+  width: 100vw;
+  height: 5em;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+div.projects .buttons button {
+  position: relative;
+  width: 100%;
+  background-color: var(--bgcolor);
+  border: none;
+  border-top: 3px solid var(--color);
+  color: var(--color);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-size: 2em;
+  z-index: 1;
+  cursor: pointer;
+}
+div.projects .buttons button.next {
+  border-left: 3px solid var(--color);
+}
+div.projects .buttons button.next::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--color);
+  z-index: -1;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+}
+div.projects .buttons button.next:hover {
+  color: var(--bgcolor);
+}
+div.projects .buttons button.next:hover::before {
+  width: 100%;
+}
+div.projects .buttons button.prev::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--color);
+  z-index: -1;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+}
+div.projects .buttons button.prev:hover {
+  color: var(--bgcolor);
+}
+div.projects .buttons button.prev:hover::before {
+  width: 100%;
 }
 
 div.about {
