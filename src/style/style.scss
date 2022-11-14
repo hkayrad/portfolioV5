@@ -272,7 +272,7 @@ div.home {
   }
 }
 
-//TODO projects styling
+//? projects styling
 div.projects {
   overflow: hidden;
   height: calc(100vh - 7em);
@@ -282,6 +282,7 @@ div.projects {
   .slider {
     position: relative;
 
+    //TODO project card styling
     .project {
       position: absolute;
       margin: auto;
@@ -296,7 +297,7 @@ div.projects {
         z-index: 1;
 
         &:hover {
-          scale: 0.9;
+          scale: 0.8;
         }
       }
 
@@ -306,7 +307,7 @@ div.projects {
         z-index: 2;
 
         &:hover {
-          scale: 0.9;
+          scale: 0.87;
         }
       }
 
@@ -315,7 +316,7 @@ div.projects {
         z-index: 3;
 
         &:hover {
-          scale: 1.05;
+          scale: 1.03;
         }
       }
 
@@ -325,7 +326,7 @@ div.projects {
         z-index: 2;
 
         &:hover {
-          scale: 0.9;
+          scale: 0.87;
         }
       }
       &[data-status="outside-right"] {
@@ -334,7 +335,7 @@ div.projects {
         z-index: 1;
 
         &:hover {
-          scale: 0.9;
+          scale: 0.8;
         }
       }
     }

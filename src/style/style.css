@@ -271,7 +271,7 @@ div.projects .slider .project[data-status=outside-left] {
   z-index: 1;
 }
 div.projects .slider .project[data-status=outside-left]:hover {
-  scale: 0.9;
+  scale: 0.8;
 }
 div.projects .slider .project[data-status=before] {
   transform: translateX(-140%);
@@ -279,14 +279,14 @@ div.projects .slider .project[data-status=before] {
   z-index: 2;
 }
 div.projects .slider .project[data-status=before]:hover {
-  scale: 0.9;
+  scale: 0.87;
 }
 div.projects .slider .project[data-status=active] {
   transform: translateX(0);
   z-index: 3;
 }
 div.projects .slider .project[data-status=active]:hover {
-  scale: 1.05;
+  scale: 1.03;
 }
 div.projects .slider .project[data-status=after] {
   transform: translateX(140%);
@@ -294,7 +294,7 @@ div.projects .slider .project[data-status=after] {
   z-index: 2;
 }
 div.projects .slider .project[data-status=after]:hover {
-  scale: 0.9;
+  scale: 0.87;
 }
 div.projects .slider .project[data-status=outside-right] {
   transform: translateX(200%);
@@ -302,7 +302,7 @@ div.projects .slider .project[data-status=outside-right] {
   z-index: 1;
 }
 div.projects .slider .project[data-status=outside-right]:hover {
-  scale: 0.9;
+  scale: 0.8;
 }
 div.projects .buttons {
   position: absolute;
