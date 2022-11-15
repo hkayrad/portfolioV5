@@ -40,12 +40,17 @@ export default function Home() {
               Linkedin
             </a>
           </li>
+          <li>
+            <NavLink to="/resume">Resume</NavLink>
+          </li>
         </ul>
       </article>
-      <NavLink className="resume" to="/resume">
+      <a className="desktop" href="https://desktop.hkayrad.me">
         <img src="./img/computer.webp" alt="" className="computer" />
-        <p className="desc">Psst, you can click the image to view my resume</p>
-      </NavLink>
+        <p className="desc">
+          Click the computer to see pure JS desktop experience.
+        </p>
+      </a>
     </motion.div>
   );
 }

@@ -103,18 +103,20 @@ export default function Projects() {
       <div className="slider">
         <Project
           index="0"
+          to="https://alierenkilinc.github.io"
           status="outside-left"
           name="AEK Personal Website"
-          img="https://via.placeholder.com/1100x600"
+          img="/img/aek.png"
           desc="
           A personal website made with vanilla HTML and JavaScript for Ali
-          Eren Kilinc to show his portfolio to other people."
+          Eren Kilinc to show his portfolio to other people. (Waiting for texts to be sent)"
         />
         <Project
           index="1"
+          to="https://docs.google.com/presentation/u/1/d/1WdBIRq7PaabWWXLWedBkUCKILvpiZ0CI/edit?usp=sharing&ouid=103587808423500113376&rtpof=true&sd=true"
           status="before"
           name="DrDir10"
-          img="https://via.placeholder.com/1100x600"
+          img="/img/drdir10.png"
           desc="
           We participated and designed a concept flying car in Teknofest
           2020 Flying Car Design Competition Free Category and became
@@ -122,9 +124,10 @@ export default function Projects() {
         />
         <Project
           index="2"
+          to="https://bohredom.hkayrad.me"
           status="active"
           name="Bohredom"
-          img="https://via.placeholder.com/1100x600"
+          img="/img/bohredom.png"
           desc='
           We, as Bohredom, managed to develop a website platform in order to
           serve to science enthusiasts as a source. If you ask us "How are
@@ -134,9 +137,10 @@ export default function Projects() {
         />
         <Project
           index="3"
+          to="https://sehiredebiyati.wixsite.com/sehiredebiyati"
           status="after"
           name="Sehir Edebiyati"
-          img="https://via.placeholder.com/1100x600"
+          img="/img/sehiredebiyati.png"
           desc="
           With some literature enthusiast friends, we managed to find
           architectural connections to literature and made Sehir Edebiyati
@@ -144,9 +148,10 @@ export default function Projects() {
         />
         <Project
           index="4"
+          to="https://github.com/hkayrad/intercastedArchive"
           status="outside-right"
           name="Intercasted"
-          img="https://via.placeholder.com/1100x600"
+          img="/img/interDark.png"
           desc="
           Intercasted was a platform that you can live stream prepared
           videos with a growing audience and interact with them."

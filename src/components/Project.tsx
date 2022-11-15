@@ -1,14 +1,22 @@
 //@ts-ignore
-export default function Project({ name, img, desc, index, status }) {
+export default function Project({ name, img, desc, index, status, to }) {
   return (
-    <div className="project" data-index={index} data-status={status}>
+    <a
+      href={to}
+      className="project"
+      data-index={index}
+      data-status={status}
+      target="_blank"
+    >
       <div className="wrapper">
         <div className="text">
           <h3>{name}</h3>
           <p>{desc}</p>
         </div>
-        <img src={img} alt="" />
+        <div className="img">
+          <img src={img} alt="" />
+        </div>
       </div>
-    </div>
+    </a>
   );
 }

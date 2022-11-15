@@ -225,25 +225,26 @@ div.home article.welcomer ul.linksList a::before {
     width: 100%;
   }
 }
-div.home a.resume {
+div.home a.desktop {
   color: var(--color);
   text-decoration: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-div.home a.resume img.computer {
+div.home a.desktop img.computer {
   transform: scaleX(-1);
   width: clamp(10em, 40em, 100%);
   filter: saturate(0);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-div.home a.resume img.computer:hover {
+div.home a.desktop img.computer:hover {
   filter: saturate(1);
 }
-div.home a.resume p.desc {
+div.home a.desktop p.desc {
   width: clamp(10em, 40em, 100%);
   text-align: center;
+  font-size: 1.2em;
 }
 
 div.projects {
@@ -255,7 +256,7 @@ div.projects {
 div.projects div.slider {
   position: relative;
 }
-div.projects div.slider div.project {
+div.projects div.slider a.project {
   position: absolute;
   margin: auto;
   width: -webkit-fit-content;
@@ -268,65 +269,76 @@ div.projects div.slider div.project {
   left: 0px;
   right: 0px;
 }
-div.projects div.slider div.project div.wrapper {
+div.projects div.slider a.project div.wrapper {
   position: relative;
 }
-div.projects div.slider div.project div.wrapper div.text {
+div.projects div.slider a.project div.wrapper div.text {
   width: 100%;
-  height: calc(100% - 0.3em);
-  background-color: rgba(17, 17, 17, 0.45);
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.6);
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 2.5em;
 }
-div.projects div.slider div.project div.wrapper div.text h3 {
+div.projects div.slider a.project div.wrapper div.text h3 {
   font-size: 3em;
   color: #fff;
 }
-div.projects div.slider div.project div.wrapper div.text p {
+div.projects div.slider a.project div.wrapper div.text p {
   margin-top: 1em;
   font-size: 1.5em;
   color: #fff;
 }
-div.projects div.slider div.project[data-status=outside-left] {
+div.projects div.slider a.project div.wrapper .img {
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+}
+div.projects div.slider a.project div.wrapper .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+div.projects div.slider a.project[data-status=outside-left] {
   transform: translateX(-200%);
   scale: 0.75;
   z-index: 1;
 }
-div.projects div.slider div.project[data-status=outside-left]:hover {
+div.projects div.slider a.project[data-status=outside-left]:hover {
   scale: 0.8;
 }
-div.projects div.slider div.project[data-status=before] {
+div.projects div.slider a.project[data-status=before] {
   transform: translateX(-140%);
   scale: 0.85;
   z-index: 2;
 }
-div.projects div.slider div.project[data-status=before]:hover {
+div.projects div.slider a.project[data-status=before]:hover {
   scale: 0.87;
 }
-div.projects div.slider div.project[data-status=active] {
+div.projects div.slider a.project[data-status=active] {
   transform: translateX(0);
   z-index: 3;
 }
-div.projects div.slider div.project[data-status=active]:hover {
+div.projects div.slider a.project[data-status=active]:hover {
   scale: 1.03;
 }
-div.projects div.slider div.project[data-status=after] {
+div.projects div.slider a.project[data-status=after] {
   transform: translateX(140%);
   scale: 0.85;
   z-index: 2;
 }
-div.projects div.slider div.project[data-status=after]:hover {
+div.projects div.slider a.project[data-status=after]:hover {
   scale: 0.87;
 }
-div.projects div.slider div.project[data-status=outside-right] {
+div.projects div.slider a.project[data-status=outside-right] {
   transform: translateX(200%);
   scale: 0.75;
   z-index: 1;
 }
-div.projects div.slider div.project[data-status=outside-right]:hover {
+div.projects div.slider a.project[data-status=outside-right]:hover {
   scale: 0.8;
 }
 div.projects div.buttons {
