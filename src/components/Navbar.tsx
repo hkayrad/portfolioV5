@@ -41,13 +41,13 @@ export default function Navbar() {
   var buttonChecked = false;
   if (getCookie("darkMode") == "true") {
     buttonChecked = true;
-    root?.style.setProperty("--color", "#fff");
-    root?.style.setProperty("--bgcolor", "#111");
+    root?.style.setProperty("--bgcolor", "#fff");
+    root?.style.setProperty("--color", "#111");
     root?.style.setProperty("--inversion", "invert(0)");
   } else {
     buttonChecked = false;
-    root?.style.setProperty("--bgcolor", "#fff");
-    root?.style.setProperty("--color", "#111");
+    root?.style.setProperty("--color", "#fff");
+    root?.style.setProperty("--bgcolor", "#111");
     root?.style.setProperty("--inversion", "invert(1)");
   }
 

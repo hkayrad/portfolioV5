@@ -104,37 +104,52 @@ export default function Projects() {
         <Project
           index="0"
           status="outside-left"
-          name="test"
+          name="AEK Personal Website"
           img="https://via.placeholder.com/1100x600"
-          desc="test"
+          desc="
+          A personal website made with vanilla HTML and JavaScript for Ali
+          Eren Kilinc to show his portfolio to other people."
         />
         <Project
           index="1"
           status="before"
-          name="test"
+          name="DrDir10"
           img="https://via.placeholder.com/1100x600"
-          desc="test"
+          desc="
+          We participated and designed a concept flying car in Teknofest
+          2020 Flying Car Design Competition Free Category and became
+          winners of our category."
         />
         <Project
           index="2"
           status="active"
-          name="test"
+          name="Bohredom"
           img="https://via.placeholder.com/1100x600"
-          desc="test"
+          desc='
+          We, as Bohredom, managed to develop a website platform in order to
+          serve to science enthusiasts as a source. If you ask us "How are
+          you achieving this?" Bohredom website visualizing the space
+          environment and make you feel as you are visiting the place while
+          you are learning about it.'
         />
         <Project
           index="3"
           status="after"
-          name="test"
+          name="Sehir Edebiyati"
           img="https://via.placeholder.com/1100x600"
-          desc="test"
+          desc="
+          With some literature enthusiast friends, we managed to find
+          architectural connections to literature and made Sehir Edebiyati
+          website to show it to other people who find it interesting."
         />
         <Project
           index="4"
           status="outside-right"
-          name="test"
+          name="Intercasted"
           img="https://via.placeholder.com/1100x600"
-          desc="test"
+          desc="
+          Intercasted was a platform that you can live stream prepared
+          videos with a growing audience and interact with them."
         />
       </div>
       <div className="buttons">

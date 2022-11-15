@@ -13,8 +13,8 @@
 }
 
 :root {
-  --bgcolor: #fff;
-  --color: #111;
+  --color: #fff;
+  --bgcolor: #111;
   --inversion: invert(1);
   --overflow: hidden;
 }
@@ -277,19 +277,46 @@ div.projects {
   overflow: hidden;
   height: calc(100vh - 7em);
   width: 100vw;
-  padding-top: 2em;
+  padding-top: 3em;
 
-  .slider {
+  div.slider {
     position: relative;
 
     //TODO project card styling
-    .project {
+    div.project {
       position: absolute;
       margin: auto;
       width: fit-content;
+      height: fit-content;
       transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
       left: 0px;
       right: 0px;
+
+      div.wrapper {
+        position: relative;
+
+        div.text {
+          width: 100%;
+          height: calc(100% - 0.3em);
+          background-color: rgba($color: #111, $alpha: 0.45);
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: 2.5em;
+
+          h3 {
+            font-size: 3em;
+            color: #fff;
+          }
+
+          p {
+            margin-top: 1em;
+            font-size: 1.5em;
+            color: #fff;
+          }
+        }
+      }
 
       &[data-status="outside-left"] {
         transform: translateX(-200%);
@@ -341,7 +368,7 @@ div.projects {
     }
   }
 
-  .buttons {
+  div.buttons {
     position: absolute;
     width: 100vw;
     height: 5em;
@@ -374,7 +401,6 @@ div.projects {
           background-color: var(--color);
           z-index: -1;
           transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-          box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
         }
 
         &:hover {
@@ -397,7 +423,6 @@ div.projects {
           background-color: var(--color);
           z-index: -1;
           transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-          box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
         }
 
         &:hover {
