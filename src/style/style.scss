@@ -283,7 +283,6 @@ div.projects {
   div.slider {
     position: relative;
 
-    //TODO project card styling
     a.project {
       position: absolute;
       margin: auto;
@@ -461,14 +460,102 @@ div.projects {
   }
 }
 
-//TODO about styling
+//? about styling
 div.about {
   overflow: auto;
   height: calc(100vh - 7em);
   width: 100vw;
   display: grid;
-  grid-template-columns: 1.5fr 3fr 4fr;
+  grid-template-columns: 6fr 1fr 6fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
   padding-top: 5em;
+  overflow: hidden;
+
+  img.portrait {
+    height: calc(100vh - 12em);
+    filter: saturate(0);
+    transform: scaleX(-1);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    &:hover {
+      filter: saturate(1);
+    }
+  }
+
+  .edu,
+  .skills {
+    margin: 1em;
+    color: var(--color);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    h2.title {
+      font-size: 2.5em;
+      text-align: center;
+    }
+  }
+
+  .edu {
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    ul {
+      list-style: none;
+      text-align: left;
+      width: fit-content;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      li {
+        p.school {
+          font-size: 1.8em;
+          font-weight: bold;
+
+          span.year {
+            opacity: 0.7;
+          }
+        }
+        p.info {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
+  .skills {
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+    height: 100%;
+
+    .title {
+      margin-bottom: 1em;
+    }
+
+    .row {
+      display: flex;
+      width: 50%;
+      margin: auto;
+      justify-content: space-between;
+      margin-bottom: 1em;
+      p {
+        font-size: 1.5em;
+        transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        border: 3px solid var(--color);
+        padding: 0.2em 0.5em;
+        width: fit-content;
+        height: fit-content;
+      }
+    }
+  }
 }
 
 //TODO contact styling

@@ -413,8 +413,90 @@ div.about {
   height: calc(100vh - 7em);
   width: 100vw;
   display: grid;
-  grid-template-columns: 1.5fr 3fr 4fr;
+  grid-template-columns: 6fr 1fr 6fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
   padding-top: 5em;
+  overflow: hidden;
+}
+div.about img.portrait {
+  height: calc(100vh - 12em);
+  filter: saturate(0);
+  transform: scaleX(-1);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  grid-column: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+div.about img.portrait:hover {
+  filter: saturate(1);
+}
+div.about .edu,
+div.about .skills {
+  margin: 1em;
+  color: var(--color);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+div.about .edu h2.title,
+div.about .skills h2.title {
+  font-size: 2.5em;
+  text-align: center;
+}
+div.about .edu {
+  width: 100%;
+  height: 100%;
+  grid-column: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+div.about .edu ul {
+  list-style: none;
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+div.about .edu ul li p.school {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+div.about .edu ul li p.school span.year {
+  opacity: 0.7;
+}
+div.about .edu ul li p.info {
+  font-size: 1.2em;
+}
+div.about .skills {
+  grid-column: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 100%;
+}
+div.about .skills .title {
+  margin-bottom: 1em;
+}
+div.about .skills .row {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+div.about .skills .row p {
+  font-size: 1.5em;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 3px solid var(--color);
+  padding: 0.2em 0.5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 div.contact {
