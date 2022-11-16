@@ -299,6 +299,12 @@ div.projects div.slider a.project div.wrapper div.text div.tech p {
   border: 3px solid #fff;
   color: #fff;
   padding: 0.2em 0.5em;
+  cursor: default;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+div.projects div.slider a.project div.wrapper div.text div.tech p:hover {
+  background-color: #fff;
+  color: #111;
 }
 div.projects div.slider a.project div.wrapper div.img {
   width: 1200px;
