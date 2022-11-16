@@ -477,7 +477,8 @@ div.about .skills {
   height: 100%;
 }
 div.about .skills .title {
-  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
 }
 div.about .skills .row {
   display: flex;
@@ -497,6 +498,13 @@ div.about .skills .row p {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  color: var(--color);
+  background-color: var(--bgcolor);
+  cursor: default;
+}
+div.about .skills .row p:hover {
+  background-color: var(--color);
+  color: var(--bgcolor);
 }
 
 div.contact {
