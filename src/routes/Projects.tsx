@@ -107,6 +107,7 @@ export default function Projects() {
           status="outside-left"
           name="AEK Personal Website"
           img="/img/aek.png"
+          tech={["JavaScript", "SCSS", "EmailJS"]}
           desc="
           A personal website made with vanilla HTML and JavaScript for Ali
           Eren Kilinc to show his portfolio to other people. (Waiting for texts to be sent)"
@@ -117,6 +118,7 @@ export default function Projects() {
           status="before"
           name="DrDir10"
           img="/img/drdir10.png"
+          tech={["Fusion360", "Unity"]}
           desc="
           We participated and designed a concept flying car in Teknofest
           2020 Flying Car Design Competition Free Category and became
@@ -128,6 +130,7 @@ export default function Projects() {
           status="active"
           name="Bohredom"
           img="/img/bohredom.png"
+          tech={["React", "TypeScript", "ReactPhotoSphereViewer", "Firebase"]}
           desc='
           We, as Bohredom, managed to develop a website platform in order to
           serve to science enthusiasts as a source. If you ask us "How are
@@ -141,6 +144,7 @@ export default function Projects() {
           status="after"
           name="Sehir Edebiyati"
           img="/img/sehiredebiyati.png"
+          tech={["React", "TypeScript", "Google Street View"]}
           desc="
           With some literature enthusiast friends, we managed to find
           architectural connections to literature and made Sehir Edebiyati
@@ -152,6 +156,7 @@ export default function Projects() {
           status="outside-right"
           name="Intercasted"
           img="/img/interDark.png"
+          tech={["PHP", "mySQL", "phpMyAdmin", "JavaScript", "Firebase"]}
           desc="
           Intercasted was a platform that you can live stream prepared
           videos with a growing audience and interact with them."

@@ -1,5 +1,5 @@
 //@ts-ignore
-export default function Project({ name, img, desc, index, status, to }) {
+export default function Project({ name, img, desc, index, status, to, tech }) {
   return (
     <a
       href={to}
@@ -12,6 +12,11 @@ export default function Project({ name, img, desc, index, status, to }) {
         <div className="text">
           <h3>{name}</h3>
           <p>{desc}</p>
+          <div className="tech">
+            {tech.map((techItem: string) => (
+              <p>{techItem}</p>
+            ))}
+          </div>
         </div>
         <div className="img">
           <img src={img} alt="" />

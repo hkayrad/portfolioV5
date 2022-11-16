@@ -305,6 +305,7 @@ div.projects {
           flex-direction: column;
           justify-content: flex-end;
           padding: 2.5em;
+          gap: 1em;
 
           h3 {
             font-size: 3em;
@@ -312,13 +313,23 @@ div.projects {
           }
 
           p {
-            margin-top: 1em;
             font-size: 1.5em;
             color: #fff;
           }
+
+          div.tech {
+            display: flex;
+            gap: 1em;
+
+            p {
+              border: 3px solid #fff;
+              color: #fff;
+              padding: 0.2em 0.5em;
+            }
+          }
         }
 
-        .img {
+        div.img {
           width: 1200px;
           height: 600px;
           overflow: hidden;
