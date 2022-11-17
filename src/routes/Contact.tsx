@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 export default function Cnotact() {
   useEffect(() => {
-    document.title = "About Me";
+    document.title = "Contact Me";
   }, []);
 
   return (
@@ -13,6 +13,27 @@ export default function Cnotact() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
-    ></motion.div>
+    >
+      <div className="whitespace"></div>
+      <img className="dkImg" src="/img/dk.png" alt="" />
+      <div className="text">
+        <p>
+          I enjoy working with people who are creative and passionate about
+          their work. Let's work together to make this world more beautiful!
+        </p>
+        <p>We can be like these people together, let's talk!</p>
+        <ul>
+          <li>If you want mail: hkayrad@gmail.com</li>
+          <li>If you want to hear me: +90 (553) 797 87 35</li>
+          <li>
+            If you want my telegram:{" "}
+            <a href="https://t.me/hkayrad" target="_blank">
+              @hkayrad
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="whitespace"></div>
+    </motion.div>
   );
 }

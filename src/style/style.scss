@@ -582,8 +582,48 @@ div.contact {
   height: calc(100vh - 7em);
   width: 100vw;
   display: grid;
-  grid-template-columns: 1.5fr 3fr 4fr;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
   padding-top: 5em;
+
+  .dkImg {
+    width: clamp(10em, 40em, 100%);
+    filter: saturate(0);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover {
+      filter: saturate(1);
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 3em;
+    gap: 1em;
+    justify-content: center;
+    margin-top: 6em;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    p {
+      font-size: 2em;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 1.6em;
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0.3em;
+
+      li {
+        a {
+          color: var(--color);
+          transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+      }
+    }
+  }
 }
 
 //? cookie disclaimer
