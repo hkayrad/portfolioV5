@@ -69,6 +69,10 @@ nav.navbar a.name {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+nav.navbar a.name:hover {
+  scale: 1.05;
 }
 nav.navbar ul.leftNav,
 nav.navbar ul.rightNav {
