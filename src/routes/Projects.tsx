@@ -106,7 +106,7 @@ export default function Projects() {
           to="https://alierenkilinc.github.io"
           status="outside-left"
           name="AEK Personal Website"
-          img="/img/aek.png"
+          img="/img/aek.webp"
           tech={["JavaScript", "SCSS", "EmailJS"]}
           desc="
           A personal website made with vanilla HTML and JavaScript for Ali
@@ -117,7 +117,7 @@ export default function Projects() {
           to="https://docs.google.com/presentation/u/1/d/1WdBIRq7PaabWWXLWedBkUCKILvpiZ0CI/edit?usp=sharing&ouid=103587808423500113376&rtpof=true&sd=true"
           status="before"
           name="DrDir10"
-          img="/img/drdir10.png"
+          img="/img/drdir10.webp"
           tech={["Fusion360", "Unity"]}
           desc="
           We participated and designed a concept flying car in Teknofest
@@ -129,7 +129,7 @@ export default function Projects() {
           to="https://bohredom.hkayrad.me"
           status="active"
           name="Bohredom"
-          img="/img/bohredom.png"
+          img="/img/bohredom.webp"
           tech={["React", "TypeScript", "ReactPhotoSphereViewer", "Firebase"]}
           desc='
           We, as Bohredom, managed to develop a website platform in order to
@@ -143,7 +143,7 @@ export default function Projects() {
           to="https://sehiredebiyati.wixsite.com/sehiredebiyati"
           status="after"
           name="Sehir Edebiyati"
-          img="/img/sehiredebiyati.png"
+          img="/img/sehiredebiyati.webp"
           tech={["React", "TypeScript", "Google Street View"]}
           desc="
           With some literature enthusiast friends, we managed to find
@@ -155,7 +155,7 @@ export default function Projects() {
           to="https://github.com/hkayrad/intercastedArchive"
           status="outside-right"
           name="Intercasted"
-          img="/img/interDark.png"
+          img="/img/interDark.webp"
           tech={["PHP", "mySQL", "phpMyAdmin", "JavaScript", "Firebase"]}
           desc="
           Intercasted was a platform that you can live stream prepared
