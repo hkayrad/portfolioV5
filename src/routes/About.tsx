@@ -15,7 +15,7 @@ export default function About() {
       transition={{ duration: 0.5 }}
     >
       <div className="whitespace 1"></div>
-      <img className="portrait" src="/img/portrait.png" alt="" />
+      <img className="portrait" src="/img/portrait.webp" alt="" />
       <div className="edu">
         <h2 className="title">Education</h2>
         <ul>
