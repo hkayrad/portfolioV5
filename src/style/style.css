@@ -708,15 +708,18 @@ div.disclaimer.closed {
     display: none;
   }
   div.home article.welcomer {
-    padding: 1em 2em 2em 2em;
+    padding: 0em 2em 2em 2em;
     height: calc(100vh - 227px);
     justify-content: center;
   }
   div.home article.welcomer h2.welcomerTitle {
     margin-top: 0rem;
   }
+  div.home article.welcomer p.welcomerText {
+    margin-top: 0.3em;
+  }
   div.home article.welcomer p.links {
-    margin-top: 1em;
+    margin-top: 0.4em;
   }
   div.home article.welcomer ul.linksList li a.resume {
     display: none;

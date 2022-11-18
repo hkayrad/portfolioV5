@@ -811,15 +811,19 @@ div.disclaimer {
     }
 
     article.welcomer {
-      padding: 1em 2em 2em 2em;
+      padding: 0em 2em 2em 2em;
       height: calc(100vh - (138px + 89px));
       justify-content: center;
       h2.welcomerTitle {
         margin-top: 0rem;
       }
 
+      p.welcomerText {
+        margin-top: 0.3em;
+      }
+
       p.links {
-        margin-top: 1em;
+        margin-top: 0.4em;
       }
 
       ul.linksList {
