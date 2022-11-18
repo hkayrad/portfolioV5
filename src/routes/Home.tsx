@@ -36,12 +36,18 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <a href="http://linkedin.com/in/hkayrad" target="_blank">
+            <a
+              className="linkedin"
+              href="http://linkedin.com/in/hkayrad"
+              target="_blank"
+            >
               Linkedin
             </a>
           </li>
           <li>
-            <NavLink to="/resume">Resume</NavLink>
+            <NavLink className="resume" to="/resume">
+              Resume
+            </NavLink>
           </li>
         </ul>
       </article>

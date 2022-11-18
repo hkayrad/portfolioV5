@@ -15,7 +15,8 @@ export default function Cnotact() {
       transition={{ duration: 0.5 }}
     >
       <div className="whitespace"></div>
-      <img className="dkImg" src="/img/dk.png" alt="" />
+      {/* TODO change dk img to webp */}
+      <img className="dkImg" src="/img/dk.webp" alt="" />
       <div className="text">
         <p>
           I enjoy working with people who are creative and passionate about
@@ -26,7 +27,7 @@ export default function Cnotact() {
           <li>If you want mail: hkayrad@gmail.com</li>
           <li>If you want to hear me: +90 (553) 797 87 35</li>
           <li>
-            If you want my telegram:{" "}
+            If you want my telegram:&nbsp;
             <a href="https://t.me/hkayrad" target="_blank">
               @hkayrad
             </a>

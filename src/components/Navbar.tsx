@@ -122,6 +122,19 @@ export default function Navbar() {
           </label>
         </div>
       </nav>
+      <div className="mobileCentering">
+        <NavLink to="/" className="mobileHeader">
+          HKD
+        </NavLink>
+        <label className="switch">
+          <input
+            type="checkbox"
+            onClick={toggleDarkMode}
+            defaultChecked={buttonChecked}
+          />
+          <span className="slider"></span>
+        </label>
+      </div>
       <nav className="navmenu"></nav>
       <Outlet />
     </>
