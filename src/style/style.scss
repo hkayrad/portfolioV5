@@ -685,14 +685,17 @@ div.disclaimer {
     display: none;
   }
 
+  //TODO fix navMenu - it's huge on phones
   nav.navMenu {
     display: unset;
-    position: absolute;
+    position: fixed;
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     bottom: 0;
     width: 100%;
     padding: 1em 1em 1em 1em;
     border-top: var(--color) 1px solid;
+    background: var(--bgcolor);
+    z-index: 99;
 
     ul.navList {
       width: 100%;
@@ -701,12 +704,14 @@ div.disclaimer {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      gap: 0.5em;
+      gap: 0.4em;
+      background: var(--bgcolor);
 
       li {
         font-size: 1.5em;
         text-align: center;
         display: flex;
+        background-color: var(--bgcolor);
 
         a.link {
           width: 100%;
@@ -716,6 +721,7 @@ div.disclaimer {
           border: var(--color) 3px solid;
           text-decoration: none;
           transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+          background-color: var(--bgcolor);
 
           &.active {
             color: var(--bgcolor);
@@ -738,7 +744,7 @@ div.disclaimer {
 
     a.mobileHeader {
       position: relative;
-      font-size: 8em;
+      font-size: 5em;
       text-align: center;
       color: var(--color);
       text-decoration: none;
@@ -754,7 +760,7 @@ div.disclaimer {
       width: 34px;
       height: 15px;
       box-sizing: border-box;
-      transform: translateY(-4px);
+      transform: translateY(0px);
 
       input {
         opacity: 0;
@@ -805,7 +811,12 @@ div.disclaimer {
     }
 
     article.welcomer {
-      padding-top: 2em;
+      padding: 1em 2em 2em 2em;
+      height: calc(100vh - (138px + 89px));
+      justify-content: center;
+      h2.welcomerTitle {
+        margin-top: 0rem;
+      }
 
       p.links {
         margin-top: 1em;
