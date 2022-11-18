@@ -228,6 +228,7 @@ div.home {
         text-decoration: none;
         font-size: 1.2em;
         position: relative;
+        transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 
         &::before {
           content: "";
@@ -684,10 +685,45 @@ div.disclaimer {
     display: none;
   }
 
-  nav.navmenu {
+  nav.navMenu {
     display: unset;
     position: absolute;
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    bottom: 0;
+    width: 100%;
+    padding: 1em 1em 1em 1em;
+    border-top: var(--color) 1px solid;
+
+    ul.navList {
+      width: 100%;
+      height: fit-content;
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0.5em;
+
+      li {
+        font-size: 1.5em;
+        text-align: center;
+        display: flex;
+
+        a.link {
+          width: 100%;
+          height: 100%;
+          padding: 0.4em;
+          color: var(--color);
+          border: var(--color) 3px solid;
+          text-decoration: none;
+          transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+          &.active {
+            color: var(--bgcolor);
+            background-color: var(--color);
+          }
+        }
+      }
+    }
   }
 
   div.mobileCentering {

@@ -135,7 +135,46 @@ export default function Navbar() {
           <span className="slider"></span>
         </label>
       </div>
-      <nav className="navmenu"></nav>
+      <nav className="navMenu">
+        <ul className="navList">
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+              to="/"
+              end
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+              to="/projects"
+              end
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+              to="/about"
+              end
+            >
+              About Me
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? "link active" : "link")}
+              to="/contact"
+              end
+            >
+              Contact Me
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
       <Outlet />
     </>
   );
