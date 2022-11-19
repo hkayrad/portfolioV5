@@ -8,7 +8,7 @@ export default function Projects() {
     document.title = "Projects";
   }, []);
 
-  const sliderLength = 4;
+  const sliderLength = 5;
   const [activeIndex, setActiveIndex] = useState(sliderLength / 2);
 
   //? nextBtn handling
@@ -140,8 +140,18 @@ export default function Projects() {
         />
         <Project
           index="3"
-          to="https://sehiredebiyati.wixsite.com/sehiredebiyati"
+          to="https://desktop.hkayrad.me"
           status="after"
+          name="Desktop Experience"
+          img="/img/de.webp"
+          tech={["JavaScript", "SCSS", "EMailJS"]}
+          desc="
+          I wanted to challenge myself to learn Vanilla JavaScript to improve. So I created a desktop environment experience on web. I merged Ubuntu and Windows look to create a unique design."
+        />
+        <Project
+          index="4"
+          to="https://sehiredebiyati.wixsite.com/sehiredebiyati"
+          status="outside-right"
           name="Sehir Edebiyati"
           img="/img/sehiredebiyati.webp"
           tech={["React", "TypeScript", "Google Street View"]}
@@ -151,7 +161,7 @@ export default function Projects() {
           website to show it to other people who find it interesting."
         />
         <Project
-          index="4"
+          index="5"
           to="https://github.com/hkayrad/intercastedArchive"
           status="outside-right"
           name="Intercasted"
