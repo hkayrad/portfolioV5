@@ -25,13 +25,13 @@ export default function Cnotact() {
         <p>We can be like these people together, let's talk!</p>
         <ul>
           <li>If you want mail: hkayrad@gmail.com</li>
-          <li>If you want to hear me: +90 (553) 797 87 35</li>
           <li>
             If you want my telegram:&nbsp;
             <a href="https://t.me/hkayrad" target="_blank">
               @hkayrad
             </a>
           </li>
+          <li>If you want to talk, ask my phone number via Telegram</li>
         </ul>
       </div>
       <div className="whitespace"></div>
