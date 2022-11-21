@@ -44,11 +44,13 @@ export default function Navbar() {
     root?.style.setProperty("--bgcolor", "#fff");
     root?.style.setProperty("--color", "#111");
     root?.style.setProperty("--inversion", "invert(0)");
+    root?.style.setProperty("--linkInvert", "invert(1)");
   } else {
     buttonChecked = false;
     root?.style.setProperty("--color", "#fff");
     root?.style.setProperty("--bgcolor", "#111");
     root?.style.setProperty("--inversion", "invert(1)");
+    root?.style.setProperty("--linkInvert", "invert(0)");
   }
 
   //? toggling dark mode
@@ -143,7 +145,7 @@ export default function Navbar() {
               to="/"
               end
             >
-              <img src="/img/home.svg" alt="" />
+              <img className="icon" src="/img/home.svg" alt="" />
               Home
             </NavLink>
           </li>
@@ -153,7 +155,7 @@ export default function Navbar() {
               to="/projects"
               end
             >
-              <img src="/img/projects.svg" alt="" />
+              <img className="icon" src="/img/projects.svg" alt="" />
               Projects
             </NavLink>
           </li>
@@ -163,7 +165,7 @@ export default function Navbar() {
               to="/about"
               end
             >
-              <img src="/img/about.svg" alt="" />
+              <img className="icon" src="/img/about.svg" alt="" />
               About
             </NavLink>
           </li>
@@ -173,7 +175,7 @@ export default function Navbar() {
               to="/contact"
               end
             >
-              <img src="/img/contact.svg" alt="" />
+              <img className="icon" src="/img/contact.svg" alt="" />
               Contact
             </NavLink>
           </li>

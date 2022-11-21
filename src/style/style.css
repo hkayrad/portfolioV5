@@ -15,6 +15,7 @@
   --bgcolor: #111;
   --inversion: invert(1);
   --overflow: hidden;
+  --linkInvert: invert(0);
 }
 
 * {
@@ -636,13 +637,14 @@ div.disclaimer.closed {
   nav.navMenu ul.navList li a.link img {
     width: 60px;
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: var(--inversion);
   }
   nav.navMenu ul.navList li a.link.active {
     color: var(--bgcolor);
     background-color: var(--color);
   }
   nav.navMenu ul.navList li a.link.active img {
-    filter: invert(1);
+    filter: var(--linkInvert);
   }
   div.mobileCentering {
     color: var(--color);

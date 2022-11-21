@@ -19,6 +19,7 @@ $width: 1165px;
   --bgcolor: #111;
   --inversion: invert(1);
   --overflow: hidden;
+  --linkInvert: invert(0);
 }
 
 * {
@@ -722,6 +723,7 @@ div.disclaimer {
           img {
             width: 60px;
             transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+            filter: var(--inversion);
           }
 
           &.active {
@@ -729,7 +731,7 @@ div.disclaimer {
             background-color: var(--color);
 
             img {
-              filter: invert(1);
+              filter: var(--linkInvert);
             }
           }
         }
