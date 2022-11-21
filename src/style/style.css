@@ -604,21 +604,15 @@ div.disclaimer.closed {
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     bottom: 0;
     width: 100%;
-    padding: 1em 1em 1em 1em;
     border-top: var(--color) 1px solid;
     background: var(--bgcolor);
     z-index: 99;
   }
   nav.navMenu ul.navList {
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0.4em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background: var(--bgcolor);
   }
   nav.navMenu ul.navList li {
@@ -629,17 +623,26 @@ div.disclaimer.closed {
   }
   nav.navMenu ul.navList li a.link {
     width: 100%;
-    height: 100%;
-    padding: 0.4em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     color: var(--color);
-    border: var(--color) 3px solid;
     text-decoration: none;
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     background-color: var(--bgcolor);
+    padding: 0 0.4em 0.1em 0.4em;
+    font-size: 0.8em;
+  }
+  nav.navMenu ul.navList li a.link img {
+    width: 60px;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   nav.navMenu ul.navList li a.link.active {
     color: var(--bgcolor);
     background-color: var(--color);
+  }
+  nav.navMenu ul.navList li a.link.active img {
+    filter: invert(1);
   }
   div.mobileCentering {
     color: var(--color);
@@ -708,9 +711,8 @@ div.disclaimer.closed {
     display: none;
   }
   div.home article.welcomer {
-    padding: 0em 2em 2em 2em;
-    height: calc(100vh - 227px);
-    justify-content: center;
+    padding: 2em 2em 2em 2em;
+    height: 100%;
   }
   div.home article.welcomer h2.welcomerTitle {
     margin-top: 0rem;
@@ -726,5 +728,48 @@ div.disclaimer.closed {
   }
   div.home a.desktop {
     display: none;
+  }
+  div.about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow-y: auto;
+    width: 100%;
+    padding: 0;
+  }
+  div.about div.whitespace,
+div.about img.portrait {
+    display: none;
+  }
+  div.about div.edu {
+    width: 100%;
+    margin: 0;
+    padding: 2em;
+  }
+  div.about div.edu h2.title {
+    text-align: center;
+    padding-right: 2rem;
+  }
+  div.about div.edu li {
+    margin-top: 1.2rem;
+  }
+  div.about div.edu li p {
+    padding-right: 2rem;
+  }
+  div.about div.skills {
+    width: 100%;
+    margin: 0 0 7rem 0;
+    padding: 0 2em;
+  }
+  div.about div.skills h2.title {
+    text-align: center;
+    padding-right: 2rem;
+  }
+  div.about div.skills div.row {
+    margin: 0 0 0.5rem 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+  div.about div.skills div.row p {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

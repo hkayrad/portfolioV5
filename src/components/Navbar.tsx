@@ -143,6 +143,7 @@ export default function Navbar() {
               to="/"
               end
             >
+              <img src="/img/home.svg" alt="" />
               Home
             </NavLink>
           </li>
@@ -152,6 +153,7 @@ export default function Navbar() {
               to="/projects"
               end
             >
+              <img src="/img/projects.svg" alt="" />
               Projects
             </NavLink>
           </li>
@@ -161,7 +163,8 @@ export default function Navbar() {
               to="/about"
               end
             >
-              About Me
+              <img src="/img/about.svg" alt="" />
+              About
             </NavLink>
           </li>
           <li>
@@ -170,7 +173,8 @@ export default function Navbar() {
               to="/contact"
               end
             >
-              Contact Me
+              <img src="/img/contact.svg" alt="" />
+              Contact
             </NavLink>
           </li>
         </ul>

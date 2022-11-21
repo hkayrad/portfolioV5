@@ -47,19 +47,19 @@ export default function About() {
           <p>React</p>
           <p>Express</p>
           <p>NodeJS</p>
-          <p>SASS</p>
+          <p>Git</p>
         </div>
         <div className="row">
           <p>TypeScript</p>
           <p>Dart</p>
-          <p>Git</p>
           <p>Flutter</p>
+          <p>PHP</p>
         </div>
         <div className="row">
           <p>HTML</p>
           <p>Svelte</p>
           <p>Firebase</p>
-          <p>PHP</p>
+          <p>SASS</p>
         </div>
       </div>
       <div className="whitespace 2"></div>
