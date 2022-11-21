@@ -9,7 +9,7 @@ export default function Projects() {
   }, []);
 
   const sliderLength = 5;
-  const [activeIndex, setActiveIndex] = useState(sliderLength / 2);
+  const [activeIndex, setActiveIndex] = useState(2);
 
   //? nextBtn handling
   const nextBtn = () => {
@@ -21,7 +21,7 @@ export default function Projects() {
         : -1;
 
     try {
-      const prevGroup = document.querySelector(`[data-index="${prevIndex}"]`);
+      const prevGroup = document.querySelector(`[data-index=${prevIndex}]`);
       //@ts-ignore
       prevGroup.dataset.status = "outside-left";
     } catch (e) {

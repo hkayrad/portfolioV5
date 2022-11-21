@@ -584,7 +584,7 @@ div.disclaimer .wrapper .closeBtn {
   position: absolute;
   top: 0.5em;
   right: 0.5em;
-  filter: var(--inversion);
+  filter: var(--linkInvert);
   transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
   width: 2em;
 }
