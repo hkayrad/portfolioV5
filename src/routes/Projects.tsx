@@ -34,8 +34,6 @@ export default function Projects() {
     const nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
 
     //@ts-ignore
-
-    //@ts-ignore
     currentGroup.dataset.status = "before";
     //@ts-ignore
     nextGroup.dataset.status = "active";
