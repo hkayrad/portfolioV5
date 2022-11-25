@@ -256,6 +256,9 @@ div.projects {
   width: 100vw;
   padding-top: 3em;
 }
+div.projects div.mobileProjects {
+  display: none;
+}
 div.projects div.slider {
   position: relative;
 }
@@ -633,11 +636,16 @@ div.disclaimer.closed {
     background-color: var(--bgcolor);
     padding: 0 0.4em 0.1em 0.4em;
     font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
   nav.navMenu ul.navList li a.link img {
     width: 60px;
     transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     filter: var(--inversion);
+    margin: auto;
   }
   nav.navMenu ul.navList li a.link.active {
     color: var(--bgcolor);
@@ -713,7 +721,7 @@ div.disclaimer.closed {
     display: none;
   }
   div.home article.welcomer {
-    padding: 2em 2em 2em 2em;
+    padding: 1rem;
     height: 100%;
   }
   div.home article.welcomer h2.welcomerTitle {
@@ -731,6 +739,70 @@ div.disclaimer.closed {
   div.home a.desktop {
     display: none;
   }
+  div.projects {
+    padding: 0rem;
+    position: relative;
+    width: 100vw;
+    overflow-y: auto;
+  }
+  div.projects div.slider {
+    display: none;
+  }
+  div.projects div.buttons {
+    display: none;
+  }
+  div.projects div.mobileProjects {
+    display: unset;
+    display: flex;
+    flex-direction: column;
+  }
+  div.projects div.mobileProjects a.project {
+    text-decoration: none;
+    margin-bottom: 2rem;
+  }
+  div.projects div.mobileProjects a.project[data-index="5"] {
+    margin-bottom: 5rem;
+  }
+  div.projects div.mobileProjects a.project div.wrapper {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  div.projects div.mobileProjects a.project div.wrapper .text {
+    position: relative;
+    width: 100vw;
+    padding: 1rem;
+    grid-row-start: 2;
+    color: var(--color);
+  }
+  div.projects div.mobileProjects a.project div.wrapper .text h3 {
+    font-size: 2rem;
+  }
+  div.projects div.mobileProjects a.project div.wrapper .text p {
+    font-size: 1.3rem;
+  }
+  div.projects div.mobileProjects a.project div.wrapper .text div.tech p {
+    border: 3px var(--color) solid;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0 0;
+    padding: 0.2rem 0.8rem;
+  }
+  div.projects div.mobileProjects a.project div.wrapper .img {
+    grid-row-start: 1;
+    width: 100vw;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1em 1em 0 1em;
+  }
+  div.projects div.mobileProjects a.project div.wrapper .img img {
+    width: 100%;
+    display: block;
+  }
   div.about {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -745,33 +817,52 @@ div.about img.portrait {
   div.about div.edu {
     width: 100%;
     margin: 0;
-    padding: 2em;
+    padding: 1em;
   }
   div.about div.edu h2.title {
     text-align: center;
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
   div.about div.edu li {
     margin-top: 1.2rem;
   }
   div.about div.edu li p {
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
   div.about div.skills {
     width: 100%;
     margin: 0 0 7rem 0;
-    padding: 0 2em;
+    padding: 0 1em;
   }
   div.about div.skills h2.title {
     text-align: center;
     padding-right: 2rem;
   }
   div.about div.skills div.row {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 1rem 0;
     justify-content: space-between;
     width: 100%;
   }
   div.about div.skills div.row p {
     font-size: 1.2rem;
+  }
+  div.contact {
+    display: flex;
+    padding: 0;
+  }
+  div.contact img.dkImg {
+    display: none;
+  }
+  div.contact div.text {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+  div.contact div.text ul {
+    font-size: 1.2rem;
+  }
+  div.contact div.whitespace {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

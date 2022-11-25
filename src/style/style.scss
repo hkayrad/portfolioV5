@@ -285,6 +285,10 @@ div.projects {
   width: 100vw;
   padding-top: 3em;
 
+  div.mobileProjects {
+    display: none;
+  }
+
   div.slider {
     position: relative;
 
@@ -719,11 +723,16 @@ div.disclaimer {
           background-color: var(--bgcolor);
           padding: 0 0.4em 0.1em 0.4em;
           font-size: 0.8em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
 
           img {
             width: 60px;
             transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
             filter: var(--inversion);
+            margin: auto;
           }
 
           &.active {
@@ -818,7 +827,7 @@ div.disclaimer {
     }
 
     article.welcomer {
-      padding: 2em 2em 2em 2em;
+      padding: 1rem;
       height: 100%;
 
       h2.welcomerTitle {
@@ -847,6 +856,81 @@ div.disclaimer {
     }
   }
 
+  div.projects {
+    padding: 0rem;
+    position: relative;
+    width: 100vw;
+    overflow-y: auto;
+
+    div.slider {
+      display: none;
+    }
+
+    div.buttons {
+      display: none;
+    }
+
+    div.mobileProjects {
+      display: unset;
+      display: flex;
+      flex-direction: column;
+
+      a.project {
+        text-decoration: none;
+        margin-bottom: 2rem;
+
+        &[data-index="5"] {
+          margin-bottom: 5rem;
+        }
+
+        div.wrapper {
+          position: relative;
+          width: 100vw;
+          display: flex;
+          flex-direction: column-reverse;
+
+          .text {
+            position: relative;
+            width: 100vw;
+            padding: 1rem;
+            grid-row-start: 2;
+            color: var(--color);
+
+            h3 {
+              font-size: 2rem;
+            }
+
+            p {
+              font-size: 1.3rem;
+            }
+
+            div.tech {
+              p {
+                border: 3px var(--color) solid;
+                width: fit-content;
+                display: inline-block;
+                margin: 0.5rem 0.5rem 0 0;
+                padding: 0.2rem 0.8rem;
+              }
+            }
+          }
+
+          .img {
+            grid-row-start: 1;
+            width: 100vw;
+            height: fit-content;
+            padding: 1em 1em 0 1em;
+
+            img {
+              width: 100%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
   div.about {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -862,18 +946,18 @@ div.disclaimer {
     div.edu {
       width: 100%;
       margin: 0;
-      padding: 2em;
+      padding: 1em;
 
       h2.title {
         text-align: center;
-        padding-right: 2rem;
+        padding-right: 1rem;
       }
 
       li {
         margin-top: 1.2rem;
 
         p {
-          padding-right: 2rem;
+          padding-right: 1rem;
         }
       }
     }
@@ -881,7 +965,7 @@ div.disclaimer {
     div.skills {
       width: 100%;
       margin: 0 0 7rem 0;
-      padding: 0 2em;
+      padding: 0 1em;
 
       h2.title {
         text-align: center;
@@ -889,7 +973,7 @@ div.disclaimer {
       }
 
       div.row {
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 1rem 0;
         justify-content: space-between;
         width: 100%;
 
@@ -897,6 +981,30 @@ div.disclaimer {
           font-size: 1.2rem;
         }
       }
+    }
+  }
+
+  div.contact {
+    display: flex;
+    padding: 0;
+
+    img.dkImg {
+      display: none;
+    }
+
+    div.text {
+      margin: 0;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-bottom: 5rem;
+
+      ul {
+        font-size: 1.2rem;
+      }
+    }
+
+    div.whitespace {
+      display: none;
     }
   }
 }
