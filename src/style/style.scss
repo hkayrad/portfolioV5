@@ -827,7 +827,7 @@ div.disclaimer {
     }
 
     article.welcomer {
-      padding: 2em 2em 2em 2em;
+      padding: 1rem;
       height: 100%;
 
       h2.welcomerTitle {
@@ -892,7 +892,7 @@ div.disclaimer {
           .text {
             position: relative;
             width: 100vw;
-            padding: 0.5rem;
+            padding: 1rem;
             grid-row-start: 2;
             color: var(--color);
 
@@ -919,7 +919,7 @@ div.disclaimer {
             grid-row-start: 1;
             width: 100vw;
             height: fit-content;
-            padding: 0.5em 0.5em 0 0.5em;
+            padding: 1em 1em 0 1em;
 
             img {
               width: 100%;
@@ -946,18 +946,18 @@ div.disclaimer {
     div.edu {
       width: 100%;
       margin: 0;
-      padding: 2em;
+      padding: 1em;
 
       h2.title {
         text-align: center;
-        padding-right: 2rem;
+        padding-right: 1rem;
       }
 
       li {
         margin-top: 1.2rem;
 
         p {
-          padding-right: 2rem;
+          padding-right: 1rem;
         }
       }
     }
@@ -965,7 +965,7 @@ div.disclaimer {
     div.skills {
       width: 100%;
       margin: 0 0 7rem 0;
-      padding: 0 2em;
+      padding: 0 1em;
 
       h2.title {
         text-align: center;
@@ -973,7 +973,7 @@ div.disclaimer {
       }
 
       div.row {
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 1rem 0;
         justify-content: space-between;
         width: 100%;
 
@@ -981,6 +981,30 @@ div.disclaimer {
           font-size: 1.2rem;
         }
       }
+    }
+  }
+
+  div.contact {
+    display: flex;
+    padding: 0;
+
+    img.dkImg {
+      display: none;
+    }
+
+    div.text {
+      margin: 0;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-bottom: 5rem;
+
+      ul {
+        font-size: 1.2rem;
+      }
+    }
+
+    div.whitespace {
+      display: none;
     }
   }
 }

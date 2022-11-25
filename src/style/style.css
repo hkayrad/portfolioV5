@@ -721,7 +721,7 @@ div.disclaimer.closed {
     display: none;
   }
   div.home article.welcomer {
-    padding: 2em 2em 2em 2em;
+    padding: 1rem;
     height: 100%;
   }
   div.home article.welcomer h2.welcomerTitle {
@@ -772,7 +772,7 @@ div.disclaimer.closed {
   div.projects div.mobileProjects a.project div.wrapper .text {
     position: relative;
     width: 100vw;
-    padding: 0.5rem;
+    padding: 1rem;
     grid-row-start: 2;
     color: var(--color);
   }
@@ -797,7 +797,7 @@ div.disclaimer.closed {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 0.5em 0.5em 0 0.5em;
+    padding: 1em 1em 0 1em;
   }
   div.projects div.mobileProjects a.project div.wrapper .img img {
     width: 100%;
@@ -817,33 +817,52 @@ div.about img.portrait {
   div.about div.edu {
     width: 100%;
     margin: 0;
-    padding: 2em;
+    padding: 1em;
   }
   div.about div.edu h2.title {
     text-align: center;
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
   div.about div.edu li {
     margin-top: 1.2rem;
   }
   div.about div.edu li p {
-    padding-right: 2rem;
+    padding-right: 1rem;
   }
   div.about div.skills {
     width: 100%;
     margin: 0 0 7rem 0;
-    padding: 0 2em;
+    padding: 0 1em;
   }
   div.about div.skills h2.title {
     text-align: center;
     padding-right: 2rem;
   }
   div.about div.skills div.row {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 1rem 0;
     justify-content: space-between;
     width: 100%;
   }
   div.about div.skills div.row p {
     font-size: 1.2rem;
+  }
+  div.contact {
+    display: flex;
+    padding: 0;
+  }
+  div.contact img.dkImg {
+    display: none;
+  }
+  div.contact div.text {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+  div.contact div.text ul {
+    font-size: 1.2rem;
+  }
+  div.contact div.whitespace {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
