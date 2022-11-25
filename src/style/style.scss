@@ -723,11 +723,16 @@ div.disclaimer {
           background-color: var(--bgcolor);
           padding: 0 0.4em 0.1em 0.4em;
           font-size: 0.8em;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
 
           img {
             width: 60px;
             transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
             filter: var(--inversion);
+            margin: auto;
           }
 
           &.active {
