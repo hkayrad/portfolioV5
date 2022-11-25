@@ -285,6 +285,10 @@ div.projects {
   width: 100vw;
   padding-top: 3em;
 
+  div.mobileProjects {
+    display: none;
+  }
+
   div.slider {
     position: relative;
 
@@ -844,6 +848,81 @@ div.disclaimer {
 
     a.desktop {
       display: none;
+    }
+  }
+
+  div.projects {
+    padding: 0rem;
+    position: relative;
+    width: 100vw;
+    overflow-y: auto;
+
+    div.slider {
+      display: none;
+    }
+
+    div.buttons {
+      display: none;
+    }
+
+    div.mobileProjects {
+      display: unset;
+      display: flex;
+      flex-direction: column;
+
+      a.project {
+        text-decoration: none;
+        margin-bottom: 2rem;
+
+        &[data-index="5"] {
+          margin-bottom: 5rem;
+        }
+
+        div.wrapper {
+          position: relative;
+          width: 100vw;
+          display: flex;
+          flex-direction: column-reverse;
+
+          .text {
+            position: relative;
+            width: 100vw;
+            padding: 0.5rem;
+            grid-row-start: 2;
+            color: var(--color);
+
+            h3 {
+              font-size: 2rem;
+            }
+
+            p {
+              font-size: 1.3rem;
+            }
+
+            div.tech {
+              p {
+                border: 3px var(--color) solid;
+                width: fit-content;
+                display: inline-block;
+                margin: 0.5rem 0.5rem 0 0;
+                padding: 0.2rem 0.8rem;
+              }
+            }
+          }
+
+          .img {
+            grid-row-start: 1;
+            width: 100vw;
+            height: fit-content;
+            padding: 0.5em 0.5em 0 0.5em;
+
+            img {
+              width: 100%;
+              display: block;
+            }
+          }
+        }
+      }
     }
   }
 
