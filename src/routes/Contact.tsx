@@ -15,7 +15,6 @@ export default function Cnotact() {
       transition={{ duration: 0.5 }}
     >
       <div className="whitespace"></div>
-      {/* TODO change dk img to webp */}
       <img className="dkImg" src="/img/dk.webp" alt="" />
       <div className="text">
         <p>
@@ -24,7 +23,7 @@ export default function Cnotact() {
         </p>
         <p>We can be like these people together, let's talk!</p>
         <ul>
-          <li>If you want mail: hkayrad@gmail.com</li>
+          <li>If you want mail: me@hkayrad.me</li>
           <li>
             If you want my telegram:&nbsp;
             <a href="https://t.me/hkayrad" target="_blank">
