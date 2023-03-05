@@ -247,6 +247,15 @@ export default function Projects() {
           website to show it to other people who find it interesting."
 				/>
 				<Project
+					index="2"
+					to="https://collabcorner.hkayrad.me"
+					status="before"
+					name="Collab Corner"
+					img="/img/cc.webp"
+					tech={['React', 'ReactThreeFiber', 'Framer Motion']}
+					desc="You can follow progress on our collab projects that me and my friend do in our free time."
+				/>
+				<Project
 					index="0"
 					to="https://alierenkilinc.github.io"
 					status="outside-left"
