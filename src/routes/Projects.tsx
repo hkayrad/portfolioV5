@@ -19,10 +19,11 @@ export default function Projects() {
 			activeIndex - 1 >= 0 && activeIndex - 1 < sliderLength - 1
 				? activeIndex - 1
 				: -1;
+		console.log(prevIndex);
 
 		try {
 			const prevGroup = document.querySelector(
-				`[data-index=${prevIndex}]`
+				`[data-index="${prevIndex}"]`
 			);
 			//@ts-ignore
 			prevGroup.dataset.status = 'outside-left';
