@@ -1,14 +1,14 @@
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
-import Project from '../components/Project';
+import Project from "../components/Project";
 
 export default function Projects() {
 	useEffect(() => {
-		document.title = 'Projects';
+		document.title = "Projects";
 	}, []);
 
-	const sliderLength = 6;
+	const sliderLength = 7;
 	const [activeIndex, setActiveIndex] = useState(3);
 
 	//? nextBtn handling
@@ -22,11 +22,9 @@ export default function Projects() {
 		console.log(prevIndex);
 
 		try {
-			const prevGroup = document.querySelector(
-				`[data-index="${prevIndex}"]`
-			);
+			const prevGroup = document.querySelector(`[data-index="${prevIndex}"]`);
 			//@ts-ignore
-			prevGroup.dataset.status = 'outside-left';
+			prevGroup.dataset.status = "outside-left";
 		} catch (e) {
 			console.log(e);
 		}
@@ -37,16 +35,16 @@ export default function Projects() {
 		const nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
 
 		//@ts-ignore
-		currentGroup.dataset.status = 'before';
+		currentGroup.dataset.status = "before";
 		//@ts-ignore
-		nextGroup.dataset.status = 'active';
+		nextGroup.dataset.status = "active";
 
 		try {
 			const nexxtGroup = document.querySelector(
 				`[data-index="${nextIndex + 1}"]`
 			);
 			//@ts-ignore
-			nexxtGroup.dataset.status = 'after';
+			nexxtGroup.dataset.status = "after";
 		} catch (e) {
 			console.log(e);
 		}
@@ -63,11 +61,9 @@ export default function Projects() {
 				: -1;
 
 		try {
-			const nextGroup = document.querySelector(
-				`[data-index="${nextIndex}"]`
-			);
+			const nextGroup = document.querySelector(`[data-index="${nextIndex}"]`);
 			//@ts-ignore
-			nextGroup.dataset.status = 'outside-right';
+			nextGroup.dataset.status = "outside-right";
 		} catch (e) {
 			console.log(e);
 		}
@@ -78,16 +74,16 @@ export default function Projects() {
 		const prevGroup = document.querySelector(`[data-index="${prevIndex}"]`);
 
 		//@ts-ignore
-		currentGroup.dataset.status = 'after';
+		currentGroup.dataset.status = "after";
 		//@ts-ignore
-		prevGroup.dataset.status = 'active';
+		prevGroup.dataset.status = "active";
 
 		try {
 			const prevvGroup = document.querySelector(
 				`[data-index="${prevIndex - 1}"]`
 			);
 			//@ts-ignore
-			prevvGroup.dataset.status = 'before';
+			prevvGroup.dataset.status = "before";
 		} catch (e) {
 			console.log(e);
 		}
@@ -110,7 +106,7 @@ export default function Projects() {
 					status="outside-left"
 					name="AEK Personal Website"
 					img="/img/aek.webp"
-					tech={['JavaScript', 'SCSS', 'EmailJS']}
+					tech={["JavaScript", "SCSS", "EmailJS"]}
 					desc="
           A personal website made with vanilla HTML and JavaScript for Ali
           Eren Kilinc to show his portfolio to other people. (Waiting for texts to be sent)"
@@ -121,7 +117,7 @@ export default function Projects() {
 					status="outside-left"
 					name="DrDir10"
 					img="/img/drdir10.webp"
-					tech={['Fusion360', 'Unity']}
+					tech={["Fusion360", "Unity"]}
 					desc="
           We participated and designed a concept flying car in Teknofest
           2020 Flying Car Design Competition Free Category and became
@@ -133,7 +129,7 @@ export default function Projects() {
 					status="before"
 					name="Collab Corner"
 					img="/img/cc.webp"
-					tech={['React', 'ReactThreeFiber', 'Framer Motion']}
+					tech={["React", "ReactThreeFiber", "Framer Motion"]}
 					desc="You can follow progress on our collab projects that me and my friend do in our free time."
 				/>
 				<Project
@@ -142,12 +138,7 @@ export default function Projects() {
 					status="active"
 					name="Bohredom"
 					img="/img/bohredom.webp"
-					tech={[
-						'React',
-						'TypeScript',
-						'ReactPhotoSphereViewer',
-						'Firebase',
-					]}
+					tech={["React", "TypeScript", "ReactPhotoSphereViewer", "Firebase"]}
 					desc='
           We, as Bohredom, managed to develop a website platform in order to
           serve to science enthusiasts as a source. If you ask us "How are
@@ -157,39 +148,43 @@ export default function Projects() {
 				/>
 				<Project
 					index="4"
-					to="https://desktop.hkayrad.me"
+					to="https://homer-git-dev-hkayrad.vercel.app/"
 					status="after"
+					name="Homer"
+					img="/img/homer.webp"
+					tech={["React", "TypeScript", "Next", "Firebase", "Vercel"]}
+					desc="
+          Homer was intended to be a showcase site to show my ability to connect databases to front end applications. But after learning NextJS is compiled static website generator, I abandoned the project"
+				/>
+				<Project
+					index="5"
+					to="https://desktop.hkayrad.me"
+					status="outside-right"
 					name="Desktop Experience"
 					img="/img/de.webp"
-					tech={['JavaScript', 'SCSS', 'EMailJS']}
+					tech={["JavaScript", "SCSS", "EMailJS"]}
 					desc="
           I wanted to challenge myself to learn Vanilla JavaScript to improve. So I created a desktop environment experience on web. I merged Ubuntu and Windows look to create a unique design."
 				/>
 				<Project
-					index="5"
+					index="6"
 					to="https://sehiredebiyati.wixsite.com/sehiredebiyati"
 					status="outside-right"
 					name="Sehir Edebiyati"
 					img="/img/sehiredebiyati.webp"
-					tech={['React', 'TypeScript', 'Google Street View']}
+					tech={["React", "TypeScript", "Google Street View"]}
 					desc="
           With some literature enthusiast friends, we managed to find
           architectural connections to literature and made Sehir Edebiyati
           website to show it to other people who find it interesting."
 				/>
 				<Project
-					index="6"
+					index="7"
 					to="https://github.com/hkayrad/intercastedArchive"
 					status="outside-right"
 					name="Intercasted"
 					img="/img/interDark.webp"
-					tech={[
-						'PHP',
-						'mySQL',
-						'phpMyAdmin',
-						'JavaScript',
-						'Firebase',
-					]}
+					tech={["PHP", "mySQL", "phpMyAdmin", "JavaScript", "Firebase"]}
 					desc="
           Intercasted was a platform that you can live stream prepared
           videos with a growing audience and interact with them."
@@ -211,12 +206,7 @@ export default function Projects() {
 					status="active"
 					name="Bohredom"
 					img="/img/bohredom.webp"
-					tech={[
-						'React',
-						'TypeScript',
-						'Firebase',
-						'ReactPhotoSphereViewer',
-					]}
+					tech={["React", "TypeScript", "Firebase", "ReactPhotoSphereViewer"]}
 					desc='
           We, as Bohredom, managed to develop a website platform in order to
           serve to science enthusiasts as a source. If you ask us "How are
@@ -230,7 +220,7 @@ export default function Projects() {
 					status="after"
 					name="Desktop Experience"
 					img="/img/de.webp"
-					tech={['JavaScript', 'SCSS', 'EMailJS']}
+					tech={["JavaScript", "SCSS", "EMailJS"]}
 					desc="
           I wanted to challenge myself to learn Vanilla JavaScript to improve. So I created a desktop environment experience on web. I merged Ubuntu and Windows look to create a unique design."
 				/>
@@ -240,7 +230,7 @@ export default function Projects() {
 					status="outside-right"
 					name="Sehir Edebiyati"
 					img="/img/sehiredebiyati.webp"
-					tech={['React', 'TypeScript', 'Google Street View']}
+					tech={["React", "TypeScript", "Google Street View"]}
 					desc="
           With some literature enthusiast friends, we managed to find
           architectural connections to literature and made Sehir Edebiyati
@@ -252,7 +242,7 @@ export default function Projects() {
 					status="before"
 					name="Collab Corner"
 					img="/img/cc.webp"
-					tech={['React', 'ReactThreeFiber', 'Framer Motion']}
+					tech={["React", "ReactThreeFiber", "Framer Motion"]}
 					desc="You can follow progress on our collab projects that me and my friend do in our free time."
 				/>
 				<Project
@@ -261,7 +251,7 @@ export default function Projects() {
 					status="outside-left"
 					name="AEK Personal Website"
 					img="/img/aek.webp"
-					tech={['JavaScript', 'SCSS', 'EmailJS']}
+					tech={["JavaScript", "SCSS", "EmailJS"]}
 					desc="
           A personal website made with vanilla HTML and JavaScript for Ali
           Eren Kilinc to show his portfolio to other people. (Waiting for texts to be sent)"
@@ -272,7 +262,7 @@ export default function Projects() {
 					status="before"
 					name="DrDir10"
 					img="/img/drdir10.webp"
-					tech={['Fusion360', 'Unity']}
+					tech={["Fusion360", "Unity"]}
 					desc="
           We participated and designed a concept flying car in Teknofest
           2020 Flying Car Design Competition Free Category and became
@@ -284,13 +274,7 @@ export default function Projects() {
 					status="outside-right"
 					name="Intercasted"
 					img="/img/interDark.webp"
-					tech={[
-						'PHP',
-						'mySQL',
-						'phpMyAdmin',
-						'JavaScript',
-						'Firebase',
-					]}
+					tech={["PHP", "mySQL", "phpMyAdmin", "JavaScript", "Firebase"]}
 					desc="
           Intercasted was a platform that you can live stream prepared
           videos with a growing audience and interact with them."
