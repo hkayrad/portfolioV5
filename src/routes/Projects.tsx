@@ -154,7 +154,7 @@ export default function Projects() {
 					img="/img/homer.webp"
 					tech={["React", "TypeScript", "Next", "Firebase", "Vercel"]}
 					desc="
-          Homer was intended to be a showcase site to show my ability to connect databases to front end applications. But after learning NextJS is compiled static website generator, I abandoned the project"
+          Homer was intended to be a showcase site to show my ability to connect databases to front end applications. But after learning NextJS is compiled static website generator, I started to rebuild the project using Express and React"
 				/>
 				<Project
 					index="5"
@@ -213,6 +213,16 @@ export default function Projects() {
           you achieving this?" Bohredom website visualizing the space
           environment and make you feel as you are visiting the place while
           you are learning about it.'
+				/>
+				<Project
+					index="4"
+					to="https://homer-git-dev-hkayrad.vercel.app/"
+					status="after"
+					name="Homer"
+					img="/img/homer.webp"
+					tech={["React", "TypeScript", "Next", "Firebase", "Vercel"]}
+					desc="
+          Homer is a mini project I've done in the summer break. It is a showcase site to show my ability to connect databases to front end applications. The database is not connected thanks to Firestore not behaving correctly. I'll try to fix it soon."
 				/>
 				<Project
 					index="3"

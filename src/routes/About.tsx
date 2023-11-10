@@ -23,7 +23,8 @@ export default function About() {
             <p className="school">
               Atilim University <span className="year"> (2022-Current)</span>
             </p>
-            <p className="info">Information Systems Engineering</p>
+            <p className="info"><i>Major</i>: Information Systems Engineering</p>
+            <p className="info"><i>Minor</i>: Computer Engineering</p>
           </li>
           <li>
             <p className="school">
