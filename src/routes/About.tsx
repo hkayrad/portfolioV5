@@ -24,7 +24,7 @@ export default function About() {
               Atilim University <span className="year"> (2022-Current)</span>
             </p>
             <p className="info"><i>Major</i>: Information Systems Engineering</p>
-            <p className="info"><i>Minor</i>: Computer Engineering</p>
+            <p className="info"><i>Double Major</i>: Computer Engineering</p>
           </li>
           <li>
             <p className="school">
